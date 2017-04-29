@@ -1,0 +1,121 @@
+body{
+    background-color: #f5f7fa;
+}
+#table{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    text-align: center;
+}
+#title{
+    text-align: center;
+    font-family: Helvetica Neue;
+    font-size: 30px;
+    margin-top: 40px;
+}
+.delete{
+    background-color: rgb(61, 112, 178);
+    color: white;
+    border-color: transparent;
+    cursor: pointer;
+}
+.time{
+    font-family: 'Orbitron';
+    font-size: 20px;
+}
+th{
+    background-color: white;
+}
+tr{
+    height: 40px;
+
+}
+tr:nth-child(even) {
+    background-color: rgba(61,112,178,0.1);
+}
+tr:nth-child(odd) {
+    background-color: white;
+}
+td{
+    width: 25%;
+}
+.container{
+    display: inline-flex;
+    flex-direction: column;
+    position: absolute;
+    right:0px;
+    top:0px;
+    width: 13%;
+}
+.notification{
+    display: inline-block;
+    background-color: khaki;
+    margin-bottom: 3px;
+    height: 80px;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    border-left: 5px;
+    border-left-style: solid;
+}
+.notification:nth-child(even){
+    border-left-color: orangered;
+}
+.notification:nth-child(odd){
+    border-left-color: black;
+}
+.time-up{
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+.notif-name{
+    margin: 0px;
+    font-size: 15px;
+}
+.close{
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    cursor: pointer;
+}
+.main{
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+    font-family: Helvetica Neue;
+    font-size: 14px;
+    color: rgb(59, 119, 182);
+}
+.no-alarm{
+    text-align: center;
+    font-size: 30px;
+    font-family: Helvetica Neue;
+    padding-top: 50px;
+}
+.spinner {
+    left: 50%;
+    position: absolute;
+}
+.spinner-circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #4178BD;
+    border-right-color: transparent;
+    animation: rotateThis 0.75s infinite linear;
+}
+
+.spinner-circle.fast {
+    animation: rotateThis 0.5s infinite linear;
+}
+
+@keyframes rotateThis {
+    0% {
+        transform: rotate( 0deg );
+    }
+    100% {
+        transform: rotate( 360deg );
+    }
+}
