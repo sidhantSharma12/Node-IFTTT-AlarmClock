@@ -1,0 +1,1 @@
+The UI of this application allows you to set a number of timers at once. You can delete and view (in another page) selected individual timers as well. When one of the timers finishes, the app calls an IFTTT API. According to how you set up your account, you will be notified differently. For example, one can get a text message on their phone once any of the timers has finished.
